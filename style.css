@@ -1,0 +1,111 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table {border-collapse: separate;border-spacing: 0;}
+
+/* ----------------------------------------------
+ * GENERAL
+ * ------------------------------------------- */
+@font-face {
+    font-family: 'Qlassik Bold';
+    src: url(qlassik_tb_d7b9.otf);
+}
+
+html {
+	margin: 0;
+	background: #eee;
+	color: #fff;
+	font: 16px "Qlassik Bold";
+}
+
+/* ----------------------------------------------
+ * MAIN BOX
+ * ------------------------------------------- */
+#content {
+	width: 500px;
+	margin: 20px auto 20px;
+	padding: 0 10px 10px;
+	position: relative;
+	min-height: 300px;
+
+	background: #699f08;
+	background: -webkit-gradient(radial,50% -50,50,50% -100,220, from(rgba(143,221,9,1)), to(rgba(143,221,9,0))) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#699f08), to(#172302)) no-repeat;
+	background: -moz-radial-gradient(50% 10%, closest-side, rgba(143,221,9,1), rgba(143,221,9,0)) no-repeat, -moz-linear-gradient(-90deg, #699f08, #172302) no-repeat;
+	-webkit-box-shadow: rgba(0,0,0,0.4) 0 15px 40px, #060a01 0 1px 1px, #92dd10 0 -1px 0px;
+	-moz-box-shadow: rgba(0,0,0,0.4) 0 15px 40px, #060a01 0 1px 1px, #92dd10 0 -1px 0px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+h1 {
+	padding: 10px 0 10px;
+
+	color: rgba(0,0,0,0.7);
+	font-family: 'Qlassik Bold';
+	text-shadow: rgba(255,255,255,0.5) 0 1px 1px, rgba(0,0,0,0.5) 0 -1px 1px;
+	font-size: 50px;
+}
+
+h1 span {
+    display: block;
+    font-size: 16px;
+    opacity: .8;
+}
+
+form {
+    margin: 10px 0;
+    font-family: "Qlassik Bold";
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+    opacity: .8;
+    float: left;
+    width: 150px;
+    padding: 4px 0;
+}
+
+p.field {
+    padding: 5px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+	  border-bottom: 1px solid rgba(0,0,0,0.1);
+} 
+
+p.field:nth-child(even) {
+	background: rgba(0,0,0,0.05);
+}
+
+p.field:nth-child(odd) {
+	background: rgba(255,255,255,0.05);
+}
+
+form p input, form textarea {
+    font-family: "Qlassik Bold"; 
+    font-size: 16px;
+    border: none;
+    padding: 2px 4px;
+    background: rgba(255, 255, 255, .4);
+    width: 200px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+    -moz-border-radius: 3px;
+    -moz-box-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+}
+
+form p input:focus, form textarea:focus {
+    background: rgba(255, 255, 255, .8);
+}
+
+form .error {
+    display: block;
+    color: pink;
+    padding-left: 150px;
+    padding-top: 3px;
+}
